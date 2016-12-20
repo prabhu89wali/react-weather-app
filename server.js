@@ -12,7 +12,7 @@ App.use((req,res,next) => {
 	}
 })
 
-App.use(express.static('public'));
+App.use(Express.static('public'));
 
 App.listen(port, function () {
   console.log('Express server is up on port' + port);
