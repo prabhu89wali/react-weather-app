@@ -24947,29 +24947,18 @@
 	var React = __webpack_require__(1),
 	    ReactDOM = __webpack_require__(158);
 
-	var WeatherMessage = React.createClass({
-		displayName: 'WeatherMessage',
-
-		render: function render() {
-			var _props = this.props,
-			    temperature = _props.temperature,
-			    location = _props.location;
-
-			return React.createElement(
-				'div',
-				null,
-				React.createElement(
-					'h4',
-					null,
-					'It\'s ',
-					temperature,
-					' degree celcius in ',
-					location,
-					' '
-				)
-			);
-		}
-	});
+	var WeatherMessage = function WeatherMessage(_ref) {
+				var temperature = _ref.temperature,
+				    location = _ref.location;
+				return React.createElement(
+							'h4',
+							null,
+							'It\'s ',
+							temperature,
+							' degree celcius in ',
+							location
+				);
+	};
 
 	module.exports = WeatherMessage;
 
@@ -26498,17 +26487,13 @@
 	var React = __webpack_require__(1),
 	    ReactDOM = __webpack_require__(158);
 
-	var About = React.createClass({
-		displayName: 'About',
-
-		render: function render() {
-			return React.createElement(
-				'h3',
-				null,
-				'About Component'
-			);
-		}
-	});
+	var About = function About(props) {
+				return React.createElement(
+							'h3',
+							null,
+							'About Component'
+				);
+	};
 
 	module.exports = About;
 
@@ -26521,17 +26506,13 @@
 	var React = __webpack_require__(1),
 	    ReactDOM = __webpack_require__(158);
 
-	var Examples = React.createClass({
-		displayName: 'Examples',
-
-		render: function render() {
-			return React.createElement(
-				'h3',
-				null,
-				'Examples Component'
-			);
-		}
-	});
+	var Examples = function Examples(props) {
+				return React.createElement(
+							'h3',
+							null,
+							'Examples Component'
+				);
+	};
 
 	module.exports = Examples;
 
