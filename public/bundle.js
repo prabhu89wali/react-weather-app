@@ -24971,8 +24971,6 @@
 	var Axios = __webpack_require__(221),
 	    OPEN_WEATHER_MAP_URL = 'http://api.openweathermap.org/data/2.5/weather?appid=e44d05be10ad9fbe1be9b3df64c3c344&units=metric';
 
-	// api key e44d05be10ad9fbe1be9b3df64c3c344 
-
 	module.exports = {
 		getTemp: function getTemp(location) {
 			var encodedLocation = encodeURIComponent(location),
