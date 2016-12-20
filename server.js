@@ -1,10 +1,19 @@
-var express = require('express');
+const Express = require('express'), 
+			App = express();
 
-// Create our app
-var app = express();
+let port = process.env.PORT || 3000;
 
-app.use(express.static('public'));
+App.use((req,res,next) => {
+	if (req.headers['x-forwarded-proto'] === 'http') {
+		next();
+	}
+	else{
+		res.redirect('http://' + req.hostname + req.url);
+	}
+})
 
-app.listen(3000, function () {
-  console.log('Express server is up on port 3000');
+App.use(express.static('public'));
+
+App.listen(port, function () {
+  console.log('Express server is up on port' + port);
 });
